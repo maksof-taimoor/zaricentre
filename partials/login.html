@@ -1,0 +1,50 @@
+<div ng-show = "loader">
+	<div class="page-loader-wrapper" id="preloader">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+</div>
+
+<div ng-show = "!loader">
+	<body class="sign-in-up">
+	    <section>
+				<div id="page-wrapper" class="sign-in-wrapper">
+					<div class="graphs">
+						<div class="sign-in-form">
+							<div class="sign-in-form-top">
+								<p><span>Sign In to</span> <a href="index.html">Admin</a></p>
+							</div>
+							<div class="signin">
+								<form ng-submit="login()">
+									<div class="log-input">
+										<div class="log-input-left">
+										   <input type="text" ng-model="loginForm.username" class="user" placeholder="Username" autofocus/>
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<div class="log-input">
+										<div class="log-input-left">
+										   <input type="password" ng-model="loginForm.password" class="lock" placeholder="Password" />
+										</div>
+										<div class="clearfix"> </div>
+									</div>
+									<input type="submit" value="Login to your account">
+								</form>	 
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</body>
+</div>

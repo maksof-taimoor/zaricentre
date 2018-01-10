@@ -1,0 +1,123 @@
+<div ng-show = "loader">
+	<div class="page-loader-wrapper" id="preloader">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+</div>
+
+<div ng-show = "!loader">
+	<body class="sticky-header left-side-collapsed"  onload="initMap()">
+	    <section>
+	    <!-- left side start-->
+			<div class="left-side sticky-left-side">
+
+				<!--logo and iconic logo start-->
+				<div class="logo">
+					<h1><a>Admin <span>Portal</span></a></h1>
+				</div>
+				<div class="logo-icon text-center">
+					<a><i class="lnr lnr-home"></i> </a>
+				</div>
+
+				<!--logo and iconic logo end-->
+				<div class="left-side-inner">
+
+					<!--sidebar nav start-->
+						<ul class="nav nav-pills nav-stacked custom-nav">
+							<li class="menu-list nav-active">
+								<a><i class="lnr lnr-users"></i>
+									<span>Users</span></a>
+							</li>
+							<li class="menu-list">
+								<a><i class="lnr lnr-chart-bars"></i>
+									<span>Sales Stats</span></a>
+							</li>
+						</ul>
+					<!--sidebar nav end-->
+				</div>
+			</div>
+			<!-- left side end-->
+	    
+			<!-- main content start-->
+			<div class="main-content">
+				<!-- header-starts -->
+				<div class="header-section">
+				 
+				<!--toggle button start-->
+				<!-- <a class="toggle-btn  menu-collapsed"><i class="fa fa-bars"></i></a> -->
+				<!--toggle button end-->
+
+				<!--notification menu start -->
+				<div class="menu-right">
+					<div class="user-panel-top">
+						<div class="profile_details">		
+							<ul>
+								<li class="dropdown profile_details_drop">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										<div class="profile_img">	
+											<span style="background:url(assets/images/l.png) no-repeat center"> </span> 
+											 <div class="user-name">
+												<p>ADMIN<span>Administrator</span></p>
+											 </div>
+											 <i class="fa fa-power-off" title="logout" ng-click="logout()"></i>
+											<div class="clearfix"></div>	
+										</div>	
+									</a>
+								</li>
+								<div class="clearfix"> </div>
+							</ul>
+						</div>
+					</div>
+				  </div>
+				<!--notification menu end -->
+				</div>
+			<!-- //header-ends -->
+
+				<!-- <div ng-include="F19" ></div>
+				<div ng-include="F1" ></div>
+				<div ng-include="F2" ></div>
+				<div ng-include="F3" ></div>
+				<div ng-include="F4" ></div>
+				<div ng-include="F5" ></div>
+				<div ng-include="F6" ></div>
+				<div ng-include="F7" ></div>
+				<div ng-include="F8" ></div>
+				<div ng-include="F9" ></div>
+				<div ng-include="F10" ></div>
+				<div ng-include="F11" ></div>
+				<div ng-include="F12" ></div>
+				<div ng-include="F13" ></div>
+				<div ng-include="F14" ></div>
+				<div ng-include="F15" ></div>
+				<div ng-include="F16" ></div>
+				<div ng-include="F17" ></div>
+				<div ng-include="F18" ></div> -->
+				
+				 <!--body wrapper end-->
+			</div>
+	        <!--footer section start-->
+				<footer>
+				   <p>&copy 2018 Easy Admin Panel. All Rights Reserved | Design by <a href="#">w3layouts.</a></p>
+				</footer>
+	        <!--footer section end-->
+
+	      <!-- main content end-->
+	   </section>
+	  
+	<script src="assets/js/jquery.nicescroll.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	   <script src="assets/js/bootstrap.min.js"></script>
+	</body>
+</div>
